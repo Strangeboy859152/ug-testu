@@ -4,11 +4,15 @@ from os import environ
 # API Configuration
 API_ID = int(os.environ.get("API_ID", "26231033"))
 API_HASH = os.environ.get("API_HASH", "23905191485be2fb424e89d503e9d80c")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7592162508:AAHNOnYyvqjX8OBWBBgfLGICQb_UA3OGMAs")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
-CREDIT = os.environ.get("CREDIT", " 『 STRANGER 』")
+CREDIT = os.environ.get("CREDIT", "🅱︎🅴︎🆁︎🅻︎🅸︎🅽︎")
+
 # MongoDB Configuration
-MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://anu847306:rtXbTR0h0WslaUSS@cluster0.6vbuvey.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+MONGO_URL = os.environ.get(
+    "MONGO_URL",
+    "mongodb+srv://ugbot31:ugbot1234@cluster0.n1uexk5.mongodb.net/UGxPRO?retryWrites=true&w=majority&appName=Cluster0"
+)
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "UGxPRO")  # For auth system
 
 # Owner and Admin Configuration
@@ -16,12 +20,18 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "8167879352"))
 ADMINS = [int(x) for x in os.environ.get("ADMINS", "8167879352").split()]  # Default to owner ID
 
 # Channel Configuration
-PREMIUM_CHANNEL = "https://t.me/stangerboy"
-# Thumbnail Configuration
-THUMBNAILS = list(map(str, os.environ.get("THUMBNAILS", "https://i.ibb.co/JwwmgFs6/STRANGER-BOY.jpg").split()))
+PREMIUM_CHANNEL = "https://t.me/+wg5NEbdx1SM4YzY1"
 
-# Web Server Configuration
-WEB_SERVER = os.environ.get("WEB_SERVER", "False").lower() == "true"
+# Thumbnail Configuration
+THUMBNAILS = list(map(str, os.environ.get("THUMBNAILS", "https://postimg.cc/WtCcmJPx").split()))
+
+# Web Server Configuration (Fixed .lower() error)
+web_server_value = os.environ.get("WEB_SERVER", "False")
+if isinstance(web_server_value, str):
+    WEB_SERVER = web_server_value.lower() == "true"
+else:
+    WEB_SERVER = False
+
 WEBHOOK = True  # Don't change this
 PORT = int(os.environ.get("PORT", 8000))
 
@@ -58,11 +68,3 @@ Please contact the admin @ItsUGBot to get access.</blockquote>""",
 
 <blockquote>Use format: {format}</blockquote>"""
 }
-
-
-
-
-
-
-
-
