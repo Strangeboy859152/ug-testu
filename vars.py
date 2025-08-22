@@ -8,6 +8,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "7592162508:AAHNOnYyvqjX8OBWBBgfLGICQb_U
 
 CREDIT = os.environ.get("CREDIT", " 『 STRANGER 』")
 # MongoDB Configuration
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://anu847306:rtXbTR0h0WslaUSS@cluster0.6vbuvey.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "UGxPRO")  # For auth system
 
 # Owner and Admin Configuration
@@ -57,6 +58,7 @@ Please contact the admin @ItsUGBot to get access.</blockquote>""",
 
 <blockquote>Use format: {format}</blockquote>"""
 }
+
 
 
 
