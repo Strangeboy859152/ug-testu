@@ -6,7 +6,7 @@ API_ID = int(os.environ.get("API_ID", "26231033"))
 API_HASH = os.environ.get("API_HASH", "23905191485be2fb424e89d503e9d80c")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
-CREDIT = os.environ.get("CREDIT", "🅱︎🅴︎🆁︎🅻︎🅸︎🅽︎")
+CREDIT = os.environ.get("CREDIT", "€ समययात्री £")
 
 # MongoDB Configuration
 MONGO_URL = os.environ.get(
@@ -17,7 +17,7 @@ DATABASE_NAME = os.environ.get("DATABASE_NAME", "UGxPRO")  # For auth system
 
 # Owner and Admin Configuration
 OWNER_ID = int(os.environ.get("OWNER_ID", "8167879352"))
-ADMINS = [int(x) for x in os.environ.get("ADMINS", "8167879352, 5435086550").split()]  # Default to owner ID
+ADMINS = [int(x) for x in os.environ.get("ADMINS", "8167879352").split()]  # Default to owner ID
 
 # Channel Configuration
 PREMIUM_CHANNEL = "https://t.me/+wg5NEbdx1SM4YzY1"
@@ -68,4 +68,5 @@ Please contact the admin @ItsUGBot to get access.</blockquote>""",
 
 <blockquote>Use format: {format}</blockquote>"""
 }
+
 
