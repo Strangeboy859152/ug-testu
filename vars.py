@@ -17,7 +17,7 @@ DATABASE_NAME = os.environ.get("DATABASE_NAME", "UGxPRO")  # For auth system
 
 # Owner and Admin Configuration
 OWNER_ID = int(os.environ.get("OWNER_ID", "8167879352"))
-ADMINS = [int(x) for x in os.environ.get("ADMINS", "8167879352").split()]  # Default to owner ID
+ADMINS = [int(x) for x in os.environ.get("ADMINS", "8167879352, 5435086550").split()]  # Default to owner ID
 
 # Channel Configuration
 PREMIUM_CHANNEL = "https://t.me/+wg5NEbdx1SM4YzY1"
@@ -68,3 +68,4 @@ Please contact the admin @ItsUGBot to get access.</blockquote>""",
 
 <blockquote>Use format: {format}</blockquote>"""
 }
+
